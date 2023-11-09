@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.box {
+  background-image: url("img/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.img-box {
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  color: rgb(52, 95, 54);
+}
+.button {
+  background-color: green;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.9;
+  background-color: darkgreen;
+}
+.links {
+  background-color: #68e8a0;
+  text-align: center;
+  padding: 5px;
+  margin-top: 3px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/js/bootstrap.bundle.js" />
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.rtl.css" />
+  <link rel="stylesheet" href="input.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bmi</title>
+</head>
+
+<body class="h-100" dir="rtl">
+  <div class="container-fluid box mw-100">
+    <div class="row">
+      <div class="d-flex mt-5 flex-wrap justify-content-center">
+        <div class="col-7 col-md-6 d-flex flex-wrap justify-content-center">
+          <p class="col-12 text-center">وزن بر حسب کیلو گرم:</p>
+          <input type="text" class="col-4 text-center rounded-pill border-0 num1" id="num1" placeholder="وزنتو وارد کن" />
+        </div>
+        <div class="col-7 col-md-6 d-flex flex-wrap justify-content-center">
+          <p class="col-12 text-center">قد را بر حسب سانتی متر وارد کنید:</p>
+          <input type="text" class="col-4 text-center rounded-pill border-0 num1" id="num2" placeholder="قدتو وارد کن" />
+        </div>
+        <div class="col-12 d-flex mt-3 justify-content-center flex-wrap">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="col-2 img-box rounded-3" id="img-box"></div>
+          </div>
+          <button class="button rounded-pill p-3 col-2 mt-3 submit">
+            ثبت
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row flex-wrap">
+      <h3 class="col-12 title">Bmi چیست؟</h3>
+      <p>
+        شاخص توده بدنی (Body Mass Index) یا BMI ( بی ام آی ) ، یک معیار مهم
+        برای اندازه گیری تناسب قد و وزن افراد میباشد و به کمک این شاخص میتوان
+        مقدار اضافه وزن یا کمبود وزن را مشخص نمود.
+      </p>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row flex-wrap">
+      <h3 class="col-12 title">فرمول محاسبه bmi:</h3>
+      <p>
+        وزن و قد تنها عوامل موثر در محاسبه BMI میباشند. بنابراین سایر خصوصیات
+        فیزیکی مانند سن ، جنسیت (زن ، مرد) ، نژاد ، نوع استخوانبندی و ... در
+        اندازه گیری شاخص توده بدنی هیچ تاثیری ندارد. برای محاسبه BMI فرمول
+        استانداردی وجود دارد که در ادامه آمده است.فرمول شاخص توده بدنی برابر
+        است با: <span class="fw-bold">وزن تقسیم بر توان دو قد.</span>
+      </p>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row flex-wrap">
+      <h3 class="col-12 title">
+        تحلیل شاخص توده بدنی بزرگسالان ( سن ۱۹ سال و بالاتر )
+      </h3>
+      <p>
+        تحلیل نتیجه محاسبه BMI بزرگسالان ۱۹ ساله یا سن بالاتر ، مطابق تقسیم
+        بندی زیر میباشد. (جنسیت تاثیری ندارد)<br>
+      <ul class="list-unstyled">
+        <li>BMI کمتر از ۱۸/۵ : کمبود وزن</li>
+        <li>BMI بین ۱۸/۵ تا ۲۴/۵ : وزن سلامت</li>
+        <li>BMI بین ۲۵ تا ۲۹/۹ : اضافه وزن</li>
+        <li>BMI بیشتر از ۳۰ : چاقی</li>
+      </ul>
+      توجه : زنان باردار ، ورزشکاران حرفه ای دارای بدن عضلانی ، افراد دچار بیماری شدید و نقص عضو ، نباید ازاین تقسیم
+      بندی استفاده کنند.
+      </p>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row flex-wrap">
+      <h3 class="col-12 title">
+        تحلیل شاخص توده بدن کودکان و نوجوانان (سن کمتر از ۱۹ سال)
+      </h3>
+      <p class="">
+        رشد قد و وزن کودکان و نوجوان تا سن ۱۹ سالگی به سرعت درحال تغییر است و همین مسئله باعث میشود تقسیم بندی BMI
+        بزرگسالان برای کودکان و نوجوانان قابل استفاده نباشد. مثلا برای یک دختر ۸ ساله ، محدوده bmi سلامت بین ۱۳ و ۱۷/۵
+        میباشد که تفاوت بسیار زیادی با محدوده وزن سلامت بزرگسالان دارد. <br>بنابراین تحلیل شاخص توده بدنی کودکان و
+        نوجوان نیازمند جداولی است که متناسب با وضعیت رشد و جنسیت این گروه سنی باشد. یک معیار معتبر دراین زمینه جدول BMI
+        مورد تایید سازمان بهداشت جهانی (WHO) برای دختران و پسران کمتر از ۱۹ سال است. <br>در این جدول تشخیص وضعیت وزنی
+        براساس صدکهای BMI انجام میشود. یعنی ابتدا بی ام آی را مطابق فرمول اصلی بدست آورده و سپس وضعیت وزنی باتوجه به
+        جدول و سن و جنسیت و محدوده های زیر مشخص میشود.
+      <ul class="list-unstyled">
+        <li>کمبود وزن : کمتر از صدک سوم</li>
+        <li>وزن سلامت : صدک سوم تا صدک هشتاد و پنجم</li>
+        <li>اضافه وزن : صدک هشتاد و پنجم تا صدک نود و هفتم</li>
+        <li>چاقی : صدک نود و هفتم و بالاتر</li>
+      </ul>
+      توجه : در سایت باحساب تشخیص وضعیت وزنی افراد ۲ تا ۱۹ سال مطابق جداول و نمودارهای سازمان بهداشت جهانی میباشد. لینک
+      این جدولها در ادامه قابل مشاهده است.(بمنظور مشاهده ، روی لینک مورد نظر کلیک کنید)
+      </p>
+      <div class="col-12 d-flex flex-wrap justify-content-around">
+        <a href="#" class="col-12 col-lg-6 col-xl-2 text-decoration-none title fw-bold rounded-pill links">دختران 5-19
+          سال</a>
+        <a href="#" class="col-12 col-lg-6 col-xl-2 text-decoration-none title fw-bold rounded-pill links">دختران 2-5
+          سال</a>
+        <a href="#" class="col-12 col-lg-6 col-xl-2 text-decoration-none title fw-bold rounded-pill links">پسران 5-19
+          سال</a>
+        <a href="#" class="col-12 col-lg-6 col-xl-2 text-decoration-none title fw-bold rounded-pill links">پسران 2-5
+          سال</a>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid">
+      <div class="row">
+        
+      </div>
+  </footer>
+  <script src="custom.js"></script>
+</body>
+
+</html>
